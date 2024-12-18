@@ -8,4 +8,4 @@ DataIngestionConfig:
     x_rapidapi_key: 6387b1d230msh29633aa0636c084p1aa086jsnccd798b3174e
     x_rapidapi_host: twitter-api45.p.rapidapi.com
   
-  row_data_path: data
+  row_data_path: data/raw_data

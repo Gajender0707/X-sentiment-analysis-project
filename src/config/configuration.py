@@ -32,8 +32,8 @@ class ConfigurationManager:
 
 
 
-if __name__=="__main__":
-    obj=ConfigurationManager()
-    res=obj.get_data_ingestion_config()
-    print(res)
+# if __name__=="__main__":
+#     obj=ConfigurationManager()
+#     res=obj.get_data_ingestion_config()
+#     print(res)
     

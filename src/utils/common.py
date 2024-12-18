@@ -18,5 +18,5 @@ def make_dir(dir_path: Path):
 def read_yaml(filepath: Path) ->DotMap:
     with open(filepath,"r") as f:
         data=yaml.safe_load(f)
-        Logger.info("Data has been load Sucessfully...")
+        Logger.info("Yaml file read Sucessfully.....")
     return DotMap(data)
