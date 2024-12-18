@@ -1,18 +1,38 @@
 from src.utils.common import make_dir,read_yaml
 import requests
-from src.constants import BEARER_TOKEN
+from src.entity.config_entity import DataIngestionConfig
+from src.config.configuration import ConfigurationManager
 
-import requests
 
-url = "https://twitter-api45.p.rapidapi.com/timeline.php"
+class DataIngestion:
+    def __init__(self,config:DataIngestionConfig):
+        self.config=config
+        
+    def fetch_from_api(self):
+        print(self.config.api_url)
+        print(self.config.api_params)
+        print(self.config.api_header)
+        response=requests.get(url=self.config.api_url,
+                              params=self.config.api_params,
+                              headers=self.config.api_header)
+        
+        
+        # Handle the response
+        if response.status_code == 200:
+            data = response.json()
+            print("Twitter timeline Data:", data)
+        else:
+            print(f"Error: {response.status_code}, Message: {response.text}")
 
-querystring = {"screenname":"elonmusk"}
 
-headers = {
-	"x-rapidapi-key": "6387b1d230msh29633aa0636c084p1aa086jsnccd798b3174e",
-	"x-rapidapi-host": "twitter-api45.p.rapidapi.com"
-}
 
-response = requests.get(url, headers=headers, params=querystring)
+if __name__=="__main__":
+    data_ingestion_config=ConfigurationManager()
+    config=data_ingestion_config.get_data_ingestion_config()
+    obj=DataIngestion(config=config)
+    res=obj.fetch_from_api()
+    print(res)
 
-print(response.json())
+
+
+

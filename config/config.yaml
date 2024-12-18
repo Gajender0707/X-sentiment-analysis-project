@@ -5,7 +5,7 @@ DataIngestionConfig:
   api:
     url: https://twitter-api45.p.rapidapi.com/timeline.php
     screenname: elonmusk
-    x-rapidapi-key: 6387b1d230msh29633aa0636c084p1aa086jsnccd798b3174e
-    x-rapidapi-host: twitter-api45.p.rapidapi.com
+    x_rapidapi_key: 6387b1d230msh29633aa0636c084p1aa086jsnccd798b3174e
+    x_rapidapi_host: twitter-api45.p.rapidapi.com
   
   row_data_path: data

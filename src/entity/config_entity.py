@@ -3,5 +3,7 @@ from pathlib import Path
 
 @dataclass
 class DataIngestionConfig:
-    api: dict
+    api_url: dict
+    api_header: dict
+    api_params: dict
     row_data_path: Path

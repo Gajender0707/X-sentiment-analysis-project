@@ -1,4 +1,10 @@
 
+CONFIG_YAML_PATH="config/config.yaml"
+PARAMS_YAML_PATH="params.yaml"
+SCHEMA_YAML_PATH="schema.yaml"
+
+
+
 API_KEY="L4DwGxXrLHrO9B2KTfO9eJi02"
 API_KEY_SECRET="bVV3v5rvfuslOnkELLG0bj6D3xYbRCTRbt9X6mn2NmdVgbDK4C"
 

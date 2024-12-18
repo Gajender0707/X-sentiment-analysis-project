@@ -6,6 +6,8 @@ project_name="twitter_project"
 list_of_files=[
     #configuration
     f"config/config.yaml",
+    f"src/config/__init__.py",
+    f"src/config/configuration.py",
 
     #github actions
     ".github/workflows/.gitkeep",
@@ -41,6 +43,10 @@ list_of_files=[
     #utils
     f"src/utils/__init__.py",
     f"src/utils/common.py",
+
+
+    #Reserach
+    "Research/reaserch.ipynb",
 
 
     #Frontent
